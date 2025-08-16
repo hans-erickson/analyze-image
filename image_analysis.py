@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""
+r"""
 Analyze one or many images with a text prompt using OpenAI's API and emit LaTeX,
 optionally compiling directly to PDF.
 
@@ -99,7 +99,7 @@ _BRACKET_DISPLAY_RE = re.compile(r"(?s)\\\[(.+?)\\\]")
 _INLINE_DOLLAR_RE = re.compile(r"(?s)(?<!\\)\$(?!\$)\s*(.+?)\s*(?<!\\)\$(?!\$)")
 
 def extract_latex(text: str) -> str:
-    """
+    r"""
     Extract LaTeX robustly with a prioritized strategy:
       1) <latex>...</latex>
       2) ```latex ... ```
